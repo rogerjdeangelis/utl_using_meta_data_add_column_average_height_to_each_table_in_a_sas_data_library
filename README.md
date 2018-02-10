@@ -90,7 +90,7 @@ Using meta data add column average height to each table in a sas data library.  
            %let rctxt=&syserrortext;
           ');
 
-          * if there is an error a window pops up and asks where you want to continue;
+          * if there is an error a window pops up and asks whether you want to continue or stop;
           * detail information about the error appears in the log;
 
           if symget('rc_code') ne '0' then do;
