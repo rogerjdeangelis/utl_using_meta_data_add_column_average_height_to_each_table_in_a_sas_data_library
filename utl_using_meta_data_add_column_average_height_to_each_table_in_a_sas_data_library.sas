@@ -3,7 +3,8 @@ Using meta data add column average height to each table in a sas data library
 see
 https://goo.gl/QzA1gq
 https://communities.sas.com/t5/SAS-Procedures/How-to-assign-a-value-from-a-table-to-another-table-according-to/m-p/435463
-
+D
+DOSUBL has another advantage over a 'SIMPLE' call execute, it creates a logging dataset.
 
 INPUT Meta data and four tables
 ===============================
@@ -66,7 +67,7 @@ INPUT Meta data and four tables
 PROCESS
 =======
 
-  data _null_;
+  data log; 
 
     set meta;
 
